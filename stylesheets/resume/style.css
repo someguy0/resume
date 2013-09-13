@@ -1,0 +1,380 @@
+/* line 8, ../../sass/resume/style.scss */
+header {
+  background-color: #B8C1CC;
+  color: #333631;
+}
+/* line 12, ../../sass/resume/style.scss */
+header .decorative {
+  background-color: #44697d;
+  height: 35px;
+  border-bottom: 1px solid #CCC;
+}
+/* line 18, ../../sass/resume/style.scss */
+header .name {
+  font-size: 3.5em;
+  font-family: "Segoe UI Light", RobotoThin, Helvetica Neue, Segoe WP, sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(68, 105, 125, 0.6);
+  text-rendering: optimizeLegibility;
+  margin: 10px 0 10px 0;
+  white-space: nowrap;
+}
+/* line 28, ../../sass/resume/style.scss */
+header .img {
+  float: right;
+  margin-top: -27px;
+  width: 32px;
+  height: 32px;
+  opacity: .8;
+  cursor: pointer;
+}
+/* line 35, ../../sass/resume/style.scss */
+header .img:hover {
+  opacity: 1;
+}
+/* line 39, ../../sass/resume/style.scss */
+header .img.pdf {
+  background: url(../images/file_icon_pdf.png) no-repeat;
+  margin-right: 30px;
+}
+/* line 44, ../../sass/resume/style.scss */
+header .img.doc {
+  background: url(../images/file_icon_doc.png) no-repeat;
+  margin-right: 5px;
+}
+@media print {
+  /* line 28, ../../sass/resume/style.scss */
+  header .img {
+    display: none;
+  }
+}
+/* line 54, ../../sass/resume/style.scss */
+header p.summary {
+  padding-top: 10px;
+}
+@media only screen and (min-width: 380px) {
+  /* line 59, ../../sass/resume/style.scss */
+  header .img {
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 65, ../../sass/resume/style.scss */
+  header p.summary {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 72, ../../sass/resume/style.scss */
+  header p.summary span {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #44697d;
+  }
+  /* line 77, ../../sass/resume/style.scss */
+  header p.summary span:hover {
+    color: #000;
+  }
+}
+/* line 84, ../../sass/resume/style.scss */
+header .subheaders {
+  padding-top: 3px;
+}
+/* line 86, ../../sass/resume/style.scss */
+header .subheaders a {
+  text-decoration: none;
+  color: #333631;
+}
+/* line 90, ../../sass/resume/style.scss */
+header .subheaders strong {
+  font-family: "Segoe UI SemiBold", RobotoBold, Helvetica Neue, Segoe WP, sans-serif;
+  font-weight: normal;
+}
+
+/* line 97, ../../sass/resume/style.scss */
+footer {
+  background-color: #B8C1CC;
+}
+/* line 100, ../../sass/resume/style.scss */
+footer.expanded {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 106, ../../sass/resume/style.scss */
+  section.leftside {
+    text-align: right;
+  }
+
+  /* line 110, ../../sass/resume/style.scss */
+  DIV.job {
+    margin-top: 20px;
+  }
+}
+/* line 117, ../../sass/resume/style.scss */
+DIV.row.title + DIV.row.job {
+  margin-top: 4px;
+}
+
+/* line 121, ../../sass/resume/style.scss */
+DIV.row.title {
+  margin-top: 1px;
+}
+
+/* line 126, ../../sass/resume/style.scss */
+SECTION.workexperience strong {
+  color: #B8C1CC;
+  font-size: xx-large;
+  white-space: nowrap;
+}
+
+/* line 136, ../../sass/resume/style.scss */
+SECTION.skills strong {
+  color: #FFF;
+  font-size: xx-large;
+  white-space: nowrap;
+}
+
+/* line 143, ../../sass/resume/style.scss */
+section.leftside {
+  line-height: 1.3em;
+}
+
+/* line 147, ../../sass/resume/style.scss */
+DIV.companylogo {
+  -webkit-border-radius: 4px;
+  border: 1px solid #DDD;
+  width: 150px;
+  height: 100px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+@media print {
+  /* line 147, ../../sass/resume/style.scss */
+  DIV.companylogo {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 147, ../../sass/resume/style.scss */
+  DIV.companylogo {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+/* line 165, ../../sass/resume/style.scss */
+DIV.companylogo DIV.sprite {
+  background-image: url(../images/logosprite.png);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 172, ../../sass/resume/style.scss */
+DIV.companylogo .sprite-boalogo {
+  background-position: 0 0;
+  width: 140px;
+  height: 41px;
+  margin-top: 30px;
+}
+/* line 173, ../../sass/resume/style.scss */
+DIV.companylogo .sprite-camc {
+  background-position: 0 -46px;
+  width: 87px;
+  height: 85px;
+  margin-top: 9px;
+}
+/* line 174, ../../sass/resume/style.scss */
+DIV.companylogo .sprite-canadalogo {
+  background-position: 0 -136px;
+  width: 140px;
+  height: 44px;
+  margin-top: 26px;
+}
+/* line 175, ../../sass/resume/style.scss */
+DIV.companylogo .sprite-simplesheets {
+  background-position: 0 -185px;
+  width: 140px;
+  height: 45px;
+  margin-top: 24px;
+}
+
+/* line 180, ../../sass/resume/style.scss */
+.experience .companyname {
+  padding-bottom: 3px;
+}
+/* line 181, ../../sass/resume/style.scss */
+.experience .companyname span.name {
+  font-family: "Segoe UI Light", RobotoThin, Helvetica Neue, Segoe WP, sans-serif;
+  font-size: 1.5em;
+  color: #44697d;
+}
+/* line 191, ../../sass/resume/style.scss */
+.experience .companyinfo {
+  color: #666;
+  font-size: smaller;
+}
+/* line 196, ../../sass/resume/style.scss */
+.experience .positioninfo {
+  margin-top: 20px;
+}
+/* line 199, ../../sass/resume/style.scss */
+.experience .positioninfo .info {
+  font-family: "Segoe UI Light", RobotoThin, Helvetica Neue, Segoe WP, sans-serif;
+  color: #44697d;
+  font-size: 1.5em;
+}
+/* line 205, ../../sass/resume/style.scss */
+.experience .positioninfo .dates span {
+  display: inline-block;
+  padding: 2px 4px;
+  margin-top: 2px;
+  white-space: nowrap;
+  border-radius: 3px;
+  background-color: #EEE;
+  height: 1.2em;
+  min-width: 75px;
+  font-size: .8em;
+}
+/* line 219, ../../sass/resume/style.scss */
+.experience .positioninfo p, .experience .positioninfo li {
+  line-height: 1.5em;
+  font-size: smaller;
+}
+/* line 220, ../../sass/resume/style.scss */
+.experience .positioninfo p:first-child, .experience .positioninfo li:first-child {
+  padding-top: 5px;
+}
+/* line 230, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  line-height: 14px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  border-radius: 3px;
+}
+/* line 240, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.blue {
+  background-color: #1e8cbe;
+}
+/* line 244, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.green {
+  background-color: #88b131;
+}
+/* line 248, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.lightgreen {
+  background-color: #92d13d;
+}
+/* line 252, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.darkgreen {
+  background-color: #698925;
+}
+/* line 256, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.orange {
+  background-color: #e97b00;
+}
+/* line 260, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.darkorange {
+  background-color: #e8590a;
+}
+/* line 264, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.lightblue {
+  background-color: #62A9E3;
+}
+/* line 268, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.red {
+  background-color: #f14e32;
+}
+/* line 272, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.darkblue {
+  background-color: #044a64;
+}
+/* line 276, ../../sass/resume/style.scss */
+.experience .positioninfo .skills span.grey {
+  background-color: #616161;
+}
+
+/* line 284, ../../sass/resume/style.scss */
+.defaulthidden {
+  display: none;
+}
+@media print {
+  /* line 284, ../../sass/resume/style.scss */
+  .defaulthidden {
+    display: block;
+  }
+}
+
+/* line 292, ../../sass/resume/style.scss */
+ul {
+  list-style-image: url("../images/bulletblue.png");
+}
+@media print {
+  /* line 292, ../../sass/resume/style.scss */
+  ul {
+    margin-left: 10px;
+  }
+}
+
+/* line 300, ../../sass/resume/style.scss */
+.expanderbar {
+  background-color: #44697d;
+  height: 2.7em;
+  color: #FFF;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* line 308, ../../sass/resume/style.scss */
+.expanderbar span.expandtext {
+  position: absolute;
+  line-height: 1em;
+  font-size: 3em;
+  font-family: "Segoe UI SemiBold", RobotoBold, Helvetica Neue, Segoe WP, sans-serif;
+}
+/* line 315, ../../sass/resume/style.scss */
+.expanderbar span.arrow {
+  visibility: hidden;
+  font-size: 30px;
+  padding-left: 5px;
+}
+/* line 321, ../../sass/resume/style.scss */
+.expanderbar:hover span.arrow {
+  visibility: visible;
+}
+@media print {
+  /* line 300, ../../sass/resume/style.scss */
+  .expanderbar {
+    display: none;
+  }
+}
+
+/* line 332, ../../sass/resume/style.scss */
+.softwareexperience .category span {
+  font-family: "Segoe UI SemiBold", RobotoBold, Helvetica Neue, Segoe WP, sans-serif;
+  color: #44697d;
+  font-size: larger;
+}
+/* line 338, ../../sass/resume/style.scss */
+.softwareexperience .category i {
+  margin-top: 10px;
+  display: inline-block;
+  color: #FFF;
+  font-size: larger;
+  font-style: normal;
+}
+
+/* line 348, ../../sass/resume/style.scss */
+.mobilesize {
+  width: 550px;
+  height: 724px;
+  margin: 0 auto;
+}
+
+/* line 357, ../../sass/resume/style.scss */
+.row.debug .column,
+.row.debug .columns {
+  border: 1px solid #666;
+}

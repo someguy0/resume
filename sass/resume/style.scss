@@ -1,0 +1,360 @@
+$primaryblue: #44697D;
+
+//$regularfontstack: "Segoe UI", Roboto, Helvetica Neue, Segoe WP, sans-serif;
+$lightfontstack: "Segoe UI Light", RobotoThin, Helvetica Neue, Segoe WP, sans-serif;
+$semiboldfontstack: "Segoe UI SemiBold", RobotoBold, Helvetica Neue, Segoe WP, sans-serif;
+
+
+header {
+    background-color: #B8C1CC;
+    color: #333631;
+    
+    .decorative {
+        background-color: $primaryblue;
+        height: 35px;
+        border-bottom: 1px solid #CCC;
+    }
+    
+    .name {
+        font-size: 3.5em;
+        font-family: $lightfontstack;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(68, 105, 125, .6);
+        text-rendering: optimizeLegibility;
+        margin: 10px 0 10px 0;
+        white-space: nowrap;
+    }
+    
+    .img {
+        float: right;
+        margin-top: -27px;
+        width: 32px;
+        height: 32px;
+        opacity: .8;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        
+        &.pdf {
+            background: url(../images/file_icon_pdf.png) no-repeat;
+            margin-right: 30px;
+        }
+        
+        &.doc {
+            background: url(../images/file_icon_doc.png) no-repeat;
+            margin-right: 5px;
+        }
+        
+        @media print {
+            display: none;
+        }
+    }
+    
+    p.summary {
+        padding-top: 10px;
+    }
+    
+    @media only screen and (min-width: 380px) {
+        .img {
+            margin-top: 25px;
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        p.summary {
+            padding-top: 0;
+        }
+    }
+    
+    @media only screen and (min-width: 1280px) {
+        p.summary {
+            span {
+                text-decoration: underline;
+                cursor: pointer;
+                color: $primaryblue;
+                
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+        
+    .subheaders {
+        padding-top: 3px;
+        a {
+            text-decoration: none;
+            color: #333631;
+        }
+        strong {
+            font-family: $semiboldfontstack;
+            font-weight: normal;
+        }
+    }
+}
+
+footer {
+    background-color: #B8C1CC;
+    
+    &.expanded {
+        margin-top: 20px;    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    section.leftside {
+        text-align: right;
+    }
+    
+    DIV.job {
+        margin-top: 20px; 
+        
+        
+    }
+}
+
+DIV.row.title + DIV.row.job {
+    margin-top: 4px;
+}
+
+DIV.row.title {
+    margin-top: 1px;
+}
+
+SECTION.workexperience {
+    strong {
+        color: #B8C1CC;
+        font-size: xx-large;
+        white-space: nowrap;
+    }
+    
+    
+}
+
+SECTION.skills {
+    strong {
+        color: #FFF;
+        font-size: xx-large;
+        white-space: nowrap;
+    }
+}
+
+section.leftside {
+    line-height: 1.3em;
+}
+
+DIV.companylogo  {
+    -webkit-border-radius: 4px;
+    border: 1px solid #DDD;
+    width: 150px;
+    height: 100px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    
+    @media print {
+        display: none;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        float: right;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    DIV.sprite {
+        background-image: url(../images/logosprite.png);
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sprite-boalogo { background-position: 0 0; width: 140px; height: 41px; margin-top: 30px; } 
+    .sprite-camc { background-position: 0 -46px; width: 87px; height: 85px; margin-top: 9px; } 
+    .sprite-canadalogo { background-position: 0 -136px; width: 140px; height: 44px; margin-top: 26px; } 
+    .sprite-simplesheets { background-position: 0 -185px; width: 140px; height: 45px; margin-top: 24px; } 
+    
+}
+
+.experience {
+    .companyname {
+        span.name {
+            
+            font-family: $lightfontstack;
+            font-size: 1.5em;
+            color: $primaryblue;    
+        }
+        
+        padding-bottom: 3px;
+    }
+    
+    .companyinfo {
+        color: #666;
+        font-size: smaller;
+    }
+    
+    .positioninfo {
+        margin-top: 20px;
+        
+        .info {
+            font-family: $lightfontstack;
+            color: $primaryblue;
+            font-size: 1.5em;
+        }
+        .dates {
+            span {
+                display: inline-block;
+                padding: 2px 4px;
+                margin-top: 2px;
+                white-space: nowrap;
+                border-radius: 3px;
+                background-color: #EEE;
+                height: 1.2em;
+                min-width: 75px;
+                font-size: .8em;
+            }
+        }
+        
+        
+        p, li {
+            &:first-child {
+                padding-top: 5px;
+            }
+            line-height: 1.5em;
+            font-size: smaller;
+        }
+        li {
+            
+        }
+        .skills {
+            span {
+                display: inline-block;
+                padding: 2px 4px;
+                font-size: 11.844px;
+                line-height: 14px;
+                color: #fff;
+                text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+                white-space: nowrap;
+                border-radius: 3px;
+                
+                &.blue {
+                    background-color: #1e8cbe;
+                }
+                
+                &.green {
+                    background-color: #88b131;
+                }
+                
+                &.lightgreen {
+                    background-color: #92d13d;
+                }
+                
+                &.darkgreen {
+                    background-color: #698925;
+                }
+                
+                &.orange {
+                    background-color: #e97b00;
+                }
+                
+                &.darkorange {
+                    background-color: #e8590a;
+                }
+                
+                &.lightblue {
+                    background-color: #62A9E3;
+                }
+                
+                &.red {
+                    background-color: #f14e32;
+                }
+                
+                &.darkblue {
+                    background-color: #044a64;
+                }
+                
+                &.grey {
+                    background-color: #616161;
+                }
+            }
+        }
+    }
+}
+
+.defaulthidden {
+    display: none;
+    
+    @media print  {
+        display: block;
+    }
+}
+    
+ul {
+    list-style-image: url('../images/bulletblue.png');
+    
+    @media print  {
+        margin-left: 10px;
+    }
+}
+
+.expanderbar {
+    background-color: $primaryblue;
+    
+    height: 2.7em;
+    color: #FFF;
+    margin-top: 10px;
+    cursor: pointer;
+    
+    span.expandtext {
+        position: absolute;
+        line-height: 1em;
+        font-size: 3em;
+        font-family: $semiboldfontstack;
+    }
+    
+    span.arrow {
+        visibility: hidden;
+        font-size: 30px;
+        padding-left: 5px;
+    }
+
+    &:hover span.arrow {
+        visibility: visible;
+    }
+    
+    @media print  {
+        display: none;
+    }
+}
+
+.softwareexperience {
+    .category {
+        span {
+            font-family: $semiboldfontstack;
+            color: $primaryblue;
+            font-size: larger;
+        }
+        
+        i {
+            margin-top: 10px;
+            display: inline-block;
+            color: #FFF;
+            font-size: larger;
+            font-style: normal;
+        }
+    }
+}
+
+.mobilesize {
+     width: 550px;
+     height: 724px;
+     margin: 0 auto;
+}
+
+.row.debug {
+ 
+  .column,
+  .columns {
+    border: 1px solid #666;
+  }
+}
