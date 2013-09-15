@@ -39,7 +39,12 @@
                     <br/>
                     <a href="http://www.jpfortier.com">http://www.jpfortier.com</a>
                     <br/>
-                    <span><a href="mailto:jpfortier.resume@gmail.com">jpfortier@gmail.com</a></span>
+                    <span class='emailaddy'>
+                        <script>
+                            var emailAddy = ('jpfortier.resume@' + 'gmail.com');
+                            document.write("<a href='mailto:" + emailAddy + "'>" + emailAddy + "</a>");  
+                        </script>
+                    </span>
                     <br/>
                     <span>Austin, TX</span>
                     <br/>
